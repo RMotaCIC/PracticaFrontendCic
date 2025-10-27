@@ -1,0 +1,8 @@
+// HEADER------------------------>
+@mixin fix-image {
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    };
+}
