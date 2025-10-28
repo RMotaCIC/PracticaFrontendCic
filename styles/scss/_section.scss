@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixins';
+
+// Sizing and positioning
+.section {
+    width: 1230px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-family: variables.$general-font;
+    
+    
+    &_article {
+        width: 300px;
+        height: 325px;
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+        transition: ease 0.5s;
+
+        &-image {
+            height: 60%;
+            @include mixins.fix-image;
+        }
+        
+        &-title {
+            margin: 5px;
+        }
+        
+        &-paragraph {
+            margin: 5px;
+        }
+        
+        &-link {
+            color: rgb(41, 92, 203);
+            text-decoration: none;
+            margin-left: 5px;
+        }
+    }
+
+    &_article:hover {
+        transform: scale(1.1);
+    }
+}
+
+// IMAGE FOR EACH ARTICLE
+@for $number from 1 through 6 {
+    .image-article#{$number} {
+        background-image: url(/Requirements/img/article#{$number}.jpg);
+    }
+}

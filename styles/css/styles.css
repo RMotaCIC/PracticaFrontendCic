@@ -10,11 +10,10 @@ body {
 
 .header {
   width: 100%;
-  height: 450px;
+  height: 375px;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5529411765)), url(../../Requirements/img/bay.jpg);
-  display: grid;
   justify-items: center;
-  align-items: flex-end;
+  align-content: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,11 +21,10 @@ body {
 .header_texts {
   font-family: "Playwrite DE SAS", cursive;
   color: white;
-  margin-bottom: -180px;
+  text-align: center;
 }
 .header_texts-title {
   font-size: 3.5rem;
-  justify-self: center;
 }
 .header_texts-paragraph {
   font-size: 2rem;
@@ -39,6 +37,7 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 50px auto;
   margin-bottom: -40px;
 }
 .header_menu_list {
@@ -55,6 +54,68 @@ body {
   cursor: pointer;
   transform: scale(1.08);
   font-weight: bold;
+}
+
+.section {
+  width: 1230px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+.section_article {
+  width: 300px;
+  height: 325px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  transition: ease 0.5s;
+}
+.section_article-image {
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section_article-title {
+  margin: 5px;
+}
+.section_article-paragraph {
+  margin: 5px;
+}
+.section_article-link {
+  color: rgb(41, 92, 203);
+  text-decoration: none;
+  margin-left: 5px;
+}
+.section_article:hover {
+  transform: scale(1.1);
+}
+
+.image-article1 {
+  background-image: url(/Requirements/img/article1.jpg);
+}
+
+.image-article2 {
+  background-image: url(/Requirements/img/article2.jpg);
+}
+
+.image-article3 {
+  background-image: url(/Requirements/img/article3.jpg);
+}
+
+.image-article4 {
+  background-image: url(/Requirements/img/article4.jpg);
+}
+
+.image-article5 {
+  background-image: url(/Requirements/img/article5.jpg);
+}
+
+.image-article6 {
+  background-image: url(/Requirements/img/article6.jpg);
 }
 
 /*# sourceMappingURL=styles.css.map */
